@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>我的练习页</title>
+</head>
+<body>
+  <h1>JavaScript 练习</h1>
+  <p id="message">这里的文字等会儿会改变。</p>
+  <button id="change-button" type="button">点我</button>
+
+  <script>
+    const message = document.querySelector("#message");
+    const button = document.querySelector("#change-button");
+
+    button.addEventListener("click", () => {
+      message.textContent = "按钮生效了！";
+    });
+  </script>
+</body>
+</html>
